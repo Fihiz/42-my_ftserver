@@ -1,41 +1,41 @@
-# TO SET MY FIRST CONTAINER WITH LEMP DEPLOYMENT
-### LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
-### To create our own image, first we need to write our Dockerfile
+## TO SET MY FIRST CONTAINER WITH LEMP DEPLOYMENT
+#### LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
+#### To create our own image, first we need to write our Dockerfile
 
-# UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
+## UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
 
-### To set an image with Debian-Buster OS
+#### To set an image with Debian-Buster OS
 ```bash
 FROM debian:buster
 ```
 
-### To give labels to my Docker project
-#### The command "docker inspect" should be able to extract these infos
+#### To give labels to my Docker project
+##### The command "docker inspect" should be able to extract these infos
 ```bash
 LABEL maintainer="sad-aude@student.42lyon.fr"
 LABEL build_date="2020-06-04"
 LABEL description="Building my first docker image for a basic webserver using LEMP"
 ```
 
-### To run commands I need
-#### Packages installation ("get update" to be ensured to work to with last availables versions)
+#### To run commands I need
+##### Packages installation ("get update" to be ensured to work to with last availables versions)
 ```bash
 RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
                                                                mariadb-server \
                                                                ... \
 ```
                                             
-### To specify the directory the container should use
+#### To specify the directory the container should use
 ```bash
 WORKDIR /42-my_ftserver/
 ```
 
-### To copy configs and scripts from the host in my container
+#### To copy configs and scripts from the host in my container
 ```bash
 COPY srcs /42-my_ftserver/
 ```
 
-### To define an entrypoint : first script executed while the launching of my container
+#### To define an entrypoint : first script executed while the launching of my container
 ```bash
 ENTRYPOINT ["sh", "init_config.sh"]
 ```
