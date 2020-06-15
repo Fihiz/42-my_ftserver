@@ -1,3 +1,7 @@
+# TO SET MY FIRST CONTAINER WITH LEMP DEPLOYMENT
+### LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
+### To create our own image, first we need to write our Dockerfile
+
 # UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
 
 ### To set an image with Debian-Buster OS
@@ -26,7 +30,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
 WORKDIR /42-my_ftserver/
 ```
 
-### To copy configs and scripts in my container
+### To copy configs and scripts from the host in my container
 ```bash
 COPY srcs /42-my_ftserver/
 ```
