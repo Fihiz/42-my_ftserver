@@ -4,6 +4,7 @@
 
 ## UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
 https://docs.docker.com/get-started/part2/#sample-dockerfile
+https://codefresh.io/docker-tutorial/build-docker-image-dockerfiles/
 
 #### To set an image with Debian-Buster OS
 ```bash
