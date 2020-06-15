@@ -3,7 +3,7 @@
 #### To create our own image, first we need to write our Dockerfile
 
 ## UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
-#####(https://docs.docker.com/get-started/part2/#sample-dockerfile)
+https://docs.docker.com/get-started/part2/#sample-dockerfile
 
 #### To set an image with Debian-Buster OS
 ```bash
