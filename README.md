@@ -1,4 +1,4 @@
-### TO SET MY FIRST CONTAINER WITH LEMP DEPLOYMENT
+### FT_SERVER : project to set my first container with lemp deployment
 #### LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
 #### To create our own image, first we need to write our Dockerfile
 
