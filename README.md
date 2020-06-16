@@ -1,8 +1,8 @@
-## TO SET MY FIRST CONTAINER WITH LEMP DEPLOYMENT
+### TO SET MY FIRST CONTAINER WITH LEMP DEPLOYMENT
 #### LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
 #### To create our own image, first we need to write our Dockerfile
 
-## STEPS DOCKERFILE 
+### STEPS DOCKERFILE 
 ### UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
 #### https://docs.docker.com/get-started/part2/#sample-dockerfile
 #### https://codefresh.io/docker-tutorial/build-docker-image-dockerfiles/
@@ -43,7 +43,7 @@ COPY srcs /42-my_ftserver/
 ENTRYPOINT ["sh", "init_config.sh"]
 ```
 
-## STEPS TO BUILD AND RUN
+### STEPS TO BUILD AND RUN
 ```bash
 (sudo) docker build --tag [choosen_name] .
 (sudo) docker run [choosen_name]
