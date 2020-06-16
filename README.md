@@ -1,10 +1,11 @@
 ### FT_SERVER : project to set my first container with lemp deployment
 LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
-#### To create our own image, first we need to write our Dockerfile
 
+
+#### To create our own image, first we need to write our Dockerfile
 ### UNDERSTANDING THE DOCKERFILE INSTRUCTIONS
-#### https://docs.docker.com/get-started/part2/#sample-dockerfile
-#### https://codefresh.io/docker-tutorial/build-docker-image-dockerfiles/
+https://docs.docker.com/get-started/part2/#sample-dockerfile
+https://codefresh.io/docker-tutorial/build-docker-image-dockerfiles/
 
 #### To set an image with Debian-Buster OS
 ```bash
