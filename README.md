@@ -36,7 +36,7 @@ WORKDIR /42-my_ftserver/
 
 #### To copy configs and scripts from the host in my container
 ```bash
-COPY srcs /42-my_ftserver/
+COPY srcs ./42-my_ftserver/
 ```
 
 #### To define an entrypoint : first script executed while the launching of my container
