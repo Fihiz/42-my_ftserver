@@ -45,6 +45,6 @@ ENTRYPOINT ["sh", "init_config.sh"]
 
 ## STEPS TO BUILD AND RUN
 ```bash
-(sudo) docker build --tag [choosen_name] . \
+(sudo) docker build --tag [choosen_name] .
 (sudo) docker run [choosen_name]
 ```
