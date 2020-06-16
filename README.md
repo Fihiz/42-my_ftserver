@@ -41,3 +41,9 @@ COPY srcs /42-my_ftserver/
 ```bash
 ENTRYPOINT ["sh", "init_config.sh"]
 ```
+
+
+### TO CREATE MY IMAGE
+```bash
+(sudo) docker build --tag [choosen_name] .
+```
