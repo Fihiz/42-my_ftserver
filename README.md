@@ -21,7 +21,7 @@ LABEL build_date="2020-06-04"
 LABEL description="Building my first docker image for a basic webserver using LEMP"
 ```
 
-To run commands I need
+To run commands I need \
 Packages installation ("get update" to be ensured to work to with last availables versions)
 ```bash
 RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
