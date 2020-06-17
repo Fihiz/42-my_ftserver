@@ -50,3 +50,4 @@ ENTRYPOINT ["sh", "init_config.sh"]
 (sudo) docker build --tag [choosen_name] .
 (sudo) docker run [choosen_name]
 ```
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
