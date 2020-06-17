@@ -28,15 +28,15 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
                                                                mariadb-server \
                                                                ...
 ```
-                                            
-To specify the directory the container should use
-```bash
-WORKDIR /42-my_ftserver/
-```
 
 To copy configs and scripts from the host in my container
 ```bash
 COPY srcs ./42-my_ftserver/
+```
+
+To specify the directory the container should use
+```bash
+WORKDIR /42-my_ftserver/
 ```
 
 To define an entrypoint : \
