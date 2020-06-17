@@ -13,7 +13,7 @@ To set an image with Debian-Buster OS
 FROM debian:buster
 ```
 
-To give labels to my Docker project
+To give labels to my Docker project \
 The command "docker inspect" should be able to extract these infos
 ```bash
 LABEL maintainer="sad-aude@student.42lyon.fr"
@@ -26,7 +26,7 @@ Packages installation ("get update" to be ensured to work to with last available
 ```bash
 RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
                                                                mariadb-server \
-                                                               ... \
+                                                               ...
 ```
                                             
 To specify the directory the container should use
