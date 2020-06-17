@@ -39,7 +39,8 @@ To copy configs and scripts from the host in my container
 COPY srcs ./42-my_ftserver/
 ```
 
-To define an entrypoint : first script executed while container launching
+To define an entrypoint : \
+An entrypoint is the first script which is executed (similar to CMD)
 ```bash
 ENTRYPOINT ["sh", "init_config.sh"]
 ```
