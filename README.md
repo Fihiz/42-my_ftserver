@@ -54,4 +54,5 @@ ENTRYPOINT ["sh", "init_config.sh"]
 ### LEMP DEPLOYMENT
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10 \
 https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster \
-https://www.codeflow.site/fr/article/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+https://www.codeflow.site/fr/article/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 \
+https://korben.info/nginx-rediriger-http-https.html
