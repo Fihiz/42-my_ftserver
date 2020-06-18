@@ -56,3 +56,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mari
 https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster \
 https://www.codeflow.site/fr/article/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 \
 https://korben.info/nginx-rediriger-http-https.html
+
+To check the syntax of our configs files
+```bash
+(sudo) nginx -t
+```
+
