@@ -67,4 +67,7 @@ To apply changes and reaload nginx
 ```bash
 (sudo) systemctl reload nginx
 ```
-
+To remove all unused or interrupted images, containers and volumes :
+```bash
+(sudo) docker system prune (-a if you also want to delete stopped images and containers)run
+```
