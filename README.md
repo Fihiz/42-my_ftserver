@@ -1,5 +1,5 @@
-FT_SERVER : project to set my first docker container with lemp deployment
-LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
+FT_SERVER : project to set my first docker container with lemp deployment \
+LEMP = Linux Nginx(server) MySQL(database) PHP(middleware) \
 
 
 To create our own image, first we need to write our Dockerfile
