@@ -51,17 +51,15 @@ STEPS TO BUILD AND RUN
 (sudo) docker run [choosen_name]
 ```
 
-LEMP DEPLOYMENT
+UNDERSTANDING LEMP DEPLOYMENT \
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10 \
 https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster \
 https://www.codeflow.site/fr/article/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 \
 https://korben.info/nginx-rediriger-http-https.html \
 https://community.jaguar-network.com/installation-dun-serveur-web-lemp/#menu_mysql
 
-To check the syntax of our config files
-```bash
-(sudo) nginx -t
-```
+
+SOME USEFUL COMMANDS \
 
 To apply changes and reaload nginx
 ```bash
