@@ -59,7 +59,7 @@ https://korben.info/nginx-rediriger-http-https.html \
 https://community.jaguar-network.com/installation-dun-serveur-web-lemp/#menu_mysql
 
 
-SOME USEFUL COMMANDS \
+SOME USEFUL COMMANDS
 
 To apply changes and reaload nginx
 ```bash
