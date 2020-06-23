@@ -1,8 +1,8 @@
-### FT_SERVER : project to set my first docker container with lemp deployment
+FT_SERVER : project to set my first docker container with lemp deployment
 LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
 
 
-### To create our own image, first we need to write our Dockerfile
+To create our own image, first we need to write our Dockerfile
 
 UNDERSTANDING THE DOCKERFILE INSTRUCTIONS \
 https://docs.docker.com/get-started/part2/#sample-dockerfile \
@@ -45,13 +45,13 @@ An entrypoint is the first script which is executed (similar to CMD)
 ENTRYPOINT ["sh", "init_config.sh"]
 ```
 
-### STEPS TO BUILD AND RUN
+STEPS TO BUILD AND RUN
 ```bash
 (sudo) docker build --tag [choosen_name] .
 (sudo) docker run [choosen_name]
 ```
 
-### LEMP DEPLOYMENT
+LEMP DEPLOYMENT
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10 \
 https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster \
 https://www.codeflow.site/fr/article/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04 \
