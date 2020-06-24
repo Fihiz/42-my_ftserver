@@ -47,8 +47,8 @@ ENTRYPOINT ["sh", "init_config.sh"]
 
 STEPS TO BUILD AND RUN
 ```bash
-(sudo) docker build --tag [choosen_name] .
-(sudo) docker run [choosen_name]
+(sudo) docker build --tag [choosen_image_name] .
+(sudo) docker run -p 443:443 --name SOMENAME [choosen_image_name]
 ```
 
 UNDERSTANDING LEMP DEPLOYMENT \
