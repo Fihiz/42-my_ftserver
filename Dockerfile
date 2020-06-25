@@ -1,13 +1,17 @@
 FROM debian:buster
 LABEL maintainer="sad-aude@student.42lyon.fr"
-LABEL build_date="2020-06-04"
-LABEL description="building my first docker image for a basic webserver using WordPress, PHPMyAdmin and MySQL"
+LABEL description="Building my first Docker image for a basic LEMP webserver"
 RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
                                                                mariadb-server \
                                                                wget \
-                                                               
-                                            
-
-WORKDIR /42-my_ftserver/
-COPY srcs /42-my_ftserver/
-ENTRYPOINT ["sh", "init_config.sh"]
+                                                               php \
+                                                               php-cli \
+                                                               php-cgi \
+                                                               php-mbstring \
+                                                               php-fpm \
+                                                               php-mysql \
+                                                               libnss3-tools
+COPY srcs ./ft_server/
+WORKDIR /ft_server/
+EXPOSE 80 443
+ENTRYPOINT ["sh", "container_config.sh"]
