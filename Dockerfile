@@ -11,7 +11,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx \
                                                                php-fpm \
                                                                php-mysql \
                                                                libnss3-tools
-COPY srcs ./ft_server/
-WORKDIR /ft_server/
+COPY srcs ./root/
+WORKDIR /root/
 EXPOSE 80 443
-ENTRYPOINT ["sh", "container_config.sh"]
+CMD ["bash", "container_config.sh"]

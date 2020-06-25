@@ -8,10 +8,17 @@ chown -R $USER:$USER /var/www/localhost
 cp localhost-conf /etc/nginx/sites-available/localhost
 ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
 
+cd ssl
+chmod +x mkcert
+./mkcert -install
+./mkcert localhost
+cd ..
+
 #TEST
 cp info.php /var/www/localhost/info.php
 cp test.html /var/www/localhost/test.html
 
 #STARTING
 /etc/init.d/php7.3-fpm start
+service nginx configtest
 service nginx restart
