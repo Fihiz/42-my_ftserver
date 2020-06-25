@@ -69,3 +69,7 @@ To remove all unused or interrupted images, containers and volumes :
 ```bash
 (sudo) docker system prune (-a if you also want to delete stopped images and containers)run
 ```
+Exec ?
+```bash
+docker run --rm -it --entrypoint /bin/sh [choosen_image_name]
+```
