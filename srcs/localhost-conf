@@ -6,7 +6,7 @@ server {
     ssl_certificate_key /root/ssl/localhost-key.pem;
 
     root /var/www/localhost;
-    index info.php index.html index.htm;
+    index index.php index.html index.htm;
 
     server_name localhost;
 
