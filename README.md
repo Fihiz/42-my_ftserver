@@ -32,7 +32,7 @@ To copy configs and scripts from the host in my container
 COPY srcs ./42-my_ftserver/
 ```
 
-To specify the directory the container should use
+To specify the directory the container may use
 ```bash
 WORKDIR /42-my_ftserver/
 ```
