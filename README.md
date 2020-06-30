@@ -1,4 +1,4 @@
-## FT_SERVER : project to set my first docker container with lemp deployment \
+## FT_SERVER : project to set my first docker container with lemp deployment
 ### LEMP = Linux Nginx(server) MySQL(database) PHP(middleware)
 
 
