@@ -4,7 +4,7 @@
 
 1 - To create our own docker image, first we need to write our Dockerfile
 
-    TO UNDERSTAND DOCKERFILE INSTRUCTIONS \
+   TO UNDERSTAND DOCKERFILE INSTRUCTIONS
     https://docs.docker.com/get-started/part2/#sample-dockerfile \
     https://codefresh.io/docker-tutorial/build-docker-image-dockerfiles/
 
