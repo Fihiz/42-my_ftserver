@@ -53,7 +53,7 @@ To remove all unused or interrupted images, containers and volumes :
 docker system prune -a
 ```
 
-2 - Now we need to deploy our lemp server
+2 - Now we need to deploy our lemp server \
 UNDERSTANDING LEMP DEPLOYMENT \
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10 \
 https://www.linuxbabe.com/debian/install-lemp-stack-debian-10-buster \
