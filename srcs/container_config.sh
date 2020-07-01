@@ -4,8 +4,9 @@ echo "Here we finish to set our server !"
 
 #NGINX SETUP -> ACTIVATING VIRTUAL HOST (BE CAREFUL TO ADD FULL RIGHTS ON FOLDERS AND FILES, www-data is user by default of nginx)
 mkdir -p /var/www/localhost
+chmod 755 /var/www/*
 #chown -R $USER:$USER /var/www/localhost
-chown -R www-data -R /var/www/localhost
+#chown -R www-data -R /var/www/localhost
 cp localhost-conf /etc/nginx/sites-available/localhost
 ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
 
@@ -22,7 +23,6 @@ cd /var/www/localhost/
 tar -xzvf wordpress.tar.gz
 rm wordpress.tar.gz
 
-
 #DATABASE AND USER SETUP FOR WORDPRESS -> NEVER DOING IT WITH ADMINISTRATOR SYSTEM FOR SECURITY REASONS
 echo "CREATE DATABASE wordpress;" | mysql -u root 
 echo "CREATE USER 'wordpress'@'localhost';" | mysql -u root
@@ -31,9 +31,10 @@ echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED 
 echo "FLUSH PRIVILEGES;" | mysql -u root
 
 #USER APPLICATION SETUP -> TO LIMIT SCOPE OF ACCESS IN CASE OF INTRUSION
-adduser appuser
-chown appuser:www-data -R /var/www/*
-chmod -R 710 -R /var/www/*
+
+#TEST PART
+echo "<?php phpinfo(); ?>" > /var/www/localhost/phpinfo.php
+cp /root/todo_tests/test.html /var/www/localhost/test.html
 
 #STARTING COMMUNICATION BETWEEN PHP AND NGINX WITH OUR CONFIG
 /etc/init.d/php7.3-fpm start
