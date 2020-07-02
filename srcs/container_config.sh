@@ -4,10 +4,10 @@ echo "Here we finish to set our server !"
 
 #NGINX SETUP -> ACTIVATING VIRTUAL HOST (BE CAREFUL TO ADD FULL RIGHTS ON FOLDERS AND FILES, www-data is user by default of nginx)
 mkdir -p /var/www/localhost
-chmod 755 /var/www/*
+#chmod 755 /var/www/*
 #chown -R $USER:$USER /var/www/localhost
 #chown -R www-data -R /var/www/localhost
-cp localhost-conf /etc/nginx/sites-available/localhost
+cp auto_index/localhost-conf-on /etc/nginx/sites-available/localhost
 ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
 
 #SSL SETUP FOR SECURITY BETWEEN SERVER AND NAVIGATOR -> HTTP TO HTTPS
