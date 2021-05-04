@@ -70,7 +70,7 @@ docker run -it [choosen_image_name] /bin/bash
 ```
 
 ![Container commands]()
-![Dockerfile instructions][42-myft_server/dockerfile_instructions.png].
+![Dockerfile instructions][https://github.com/Fihiz/42-myft_server/dockerfile_instructions.png].
 
 [Docker cheatsheet](https://design.jboss.org/redhatdeveloper/marketing/docker_cheatsheet/cheatsheet/images/docker_cheatsheet_r3v2.pdf).
 
