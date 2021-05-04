@@ -49,6 +49,16 @@ docker build --tag [choosen_image_name] .
 docker run -p 443:443 [choosen_image_name]
 ```
 
+*To exec an it terminal*
+```bash
+docker exec -it [choosen_image_name] /bin/sh
+```
+
+*To run and launch the interactive terminal at the same time*
+```bash
+docker run -it [choosen_image_name] /bin/bash
+```
+
 *To remove all unused or interrupted images, containers and volumes*
 ```bash
 docker system prune -a
@@ -63,13 +73,6 @@ docker ps -a
 ```bash
 docke image ls
 ```
-
-*To run and launch the interactive terminal at the same time*
-```bash
-docker run -it [choosen_image_name] /bin/bash
-```
-
-![Container commands](https://github.com/Fihiz/42-myft_server/container_commands.png)
 
 
 [Docker cheatsheet](https://design.jboss.org/redhatdeveloper/marketing/docker_cheatsheet/cheatsheet/images/docker_cheatsheet_r3v2.pdf).
