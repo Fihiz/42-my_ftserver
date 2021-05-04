@@ -54,6 +54,23 @@ docker run -p 443:443 [choosen_image_name]
 docker system prune -a
 ```
 
+*To list running containers*
+```bash
+docker ps -a
+```
+
+*To list all images that are locally stored with the docker engine*
+```bash
+docke image ls
+```
+
+*To run and launch the interactive terminal at the same time*
+```bash
+docker run -it [choosen_image_name] /bin/bash
+```
+
+[Docker cheatsheet](https://design.jboss.org/redhatdeveloper/marketing/docker_cheatsheet/cheatsheet/images/docker_cheatsheet_r3v2.pdf).
+
 ---
 
 
