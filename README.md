@@ -43,6 +43,8 @@ WORKDIR /42-my_ftserver/
 CMD ["sh", "init_config.sh"]
 ```
 
+---
+
 - *COMMANDS STEPS TO BUILD AND RUN*
 ```bash
 docker build --tag [choosen_image_name] .
